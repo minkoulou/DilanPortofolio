@@ -24,11 +24,11 @@ export default function Diplome(){
         <div className="max-w-6xl mx-auto">
             <h2 className="text-white text-2xl font-bold text-center font-heading mb-10">FORMATIONS & DIPLÔMES</h2>
 
-            <div className="grid md:grid-cols-2 md:gap-10">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-10">
 
                 {diplomes.map(({icon:Icon,periode,titre,etablissement})=>(
 
-                   <div key={titre} className='bg-primary rounded-xl p-5 flex items-center gap-4'>
+                   <div key={titre} className='bg-[#1D2B3F] rounded-xl p-5 flex items-center gap-4'>
                      
                      <div className='bg-slate-700/50 rounded-lg p-3 shrink-0'>
                        <Icon className='text-secondary' size={22}/>

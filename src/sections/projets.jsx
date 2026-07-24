@@ -39,7 +39,7 @@ export function Projets(){
                 <h2 className="text-white text-2xl font-bold font-heading text-center">RÉALISATIONS & PROJETS</h2>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-10">
 
                 {projets.map(({img,titre,description,link,cta})=>(
 

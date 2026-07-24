@@ -8,6 +8,9 @@ import { Profile } from './sections/profile.jsx'
 import { Parcours } from './sections/parcours.jsx'
 import { Projets } from './sections/projets.jsx'
 import { Competences } from './sections/competences.jsx'
+import Diplome from './sections/diplomes'
+import { Contact } from './sections/contact.jsx'
+import { Footer } from './components/footer.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -21,6 +24,9 @@ function App() {
      <Parcours/>
      <Projets />
      <Competences />
+     <Diplome/>
+     <Contact/>
+     <Footer/>
    </div>  
    </>
   )

@@ -4,7 +4,7 @@ export function Hero() {
   const badges = ['COMMUNITY MANAGEMENT', 'DESIGN GRAPHIQUE', 'CONSEILS STRATÉGIQUES'];
 
   return (
-    <section className="relative bg-slate-800 overflow-hidden hero mt-2 max-w-6xl mx-auto">
+    <section className="relative bg-primary overflow-hidden  hero mt-2 max-w-6xl mx-auto">
        <div
         className="hidden md:block absolute top-0 right-0 h-full w-2/5 opacity-30 "
         style={{
@@ -16,14 +16,13 @@ export function Hero() {
         <img
           src={dilane}
           alt="Dilane Evina"
-          className="w-52 h-52 md:w-64 md:h-64 rounded-full object-cover bg-slate-200 shrink-0 X"
+          className="w-52 h-52 md:w-64 md:h-64 rounded-full object-cover bg-slate-200 shrink-0 novich"
         />
 
         <div>
-          <h1 className="text-white text-3xl md:text-4xl font-bold font-heading text-center md:text-left">DILANE EVINA</h1>
-          <p className="text-slate-300 font-semibold mt-2 font-inter text-center md:text-left">community manager & Graphiste</p>
+          <h1 className="text-white text-3xl md:text-4xl font-bold font-heading text-center md:text-center nom">DILANE EVINA</h1>
+          <p className="text-slate-300 font-semibold mt-2 font-inter text-center md:text-center">community manager & Graphiste</p>
       
-
           <div className="flex flex-wrap gap-3 mt-6 justify-center">
             {badges.map((badge) => (
               <span
