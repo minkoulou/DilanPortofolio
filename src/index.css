@@ -1,0 +1,141 @@
+@import 'tailwindcss';
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/600.css";
+@import "@fontsource/montserrat/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+
+
+html{
+  scroll-behavior: smooth;
+}
+@theme {
+  --color-primary:#0F172A;
+  --color-secondary:#0EA5E9;
+  --color-tertiary:#7DD3FC;
+  --color-nav-bar:#071629;
+
+  /* Typographie */
+
+  --font-heading:"Montserrat" sans-serif ;
+  --font-body:"inter" sans-serif;
+}
+
+.bar{
+  box-shadow:0px 0px 1px gray;
+}
+
+.tel{
+  backdrop-filter:blur(10px);
+    box-shadow:0px 1px 10px var(--color-secondary);
+}
+
+.hero{
+   box-shadow:0px 1px 10px black;
+}
+
+.rond{
+      box-shadow:0px 0px 10px var(--color-tertiary);
+
+}
+
+/*  animation de boutons decouvrir */
+.btn{
+    box-shadow:0px 0px 10px var(--color-tertiary);
+    animation-name: shad ;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shad {
+  0%{
+        box-shadow:0px 0px 5px var(--color-tertiary);
+  }
+  
+
+  50%{
+        box-shadow:0px 0px 10px var(--color-tertiary);
+  }
+
+
+  100%{
+        box-shadow:0px 0px 15px var(--color-tertiary);
+  }
+  
+}
+
+/* aniamation du logo  */
+.logo{
+    text-shadow:0px 0px 5px var(--color-tertiary);
+    animation-name: logo ;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes logo {
+  0%{
+        text-shadow:0px 0px 2px var(--color-secondary);
+  }
+
+  50%{
+        text-shadow:0px 0px 4px var(--color-tertiary);
+  }
+
+
+  100%{
+        text-shadow:0px 0px 3px var(--color-tertiary);
+  }
+  
+}
+
+.novich{
+ animation-name:bounce;
+ animation-duration: 10s;
+ animation-delay: 0s;
+ animation-iteration-count: infinite;
+ animation-play-state:running;
+ 
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(0px);
+    box-shadow: 5px 5px 20px rgb(58, 210, 244);
+  }
+
+   10%{
+    transform: translateY(3px);
+        box-shadow: 5px 5px 30px rgb(58, 210, 244);
+
+  }
+
+   20%{
+    box-shadow: 5px 5px 40px rgb(9, 2, 69);
+    transform: translateY(5px);
+  };
+
+ 50%{
+    transform: translateY(-5px);
+     box-shadow: 5px 5px 50px rgb(34, 195, 231);
+
+  }
+
+   80%{
+    transform: translateY(-6px);
+    box-shadow: 5px 5px 60px rgb(34, 206, 244);
+
+  }
+
+   100%{
+    transform: translateY(7px);
+    box-shadow: 5px 5px 70px rgb(58, 210, 244);
+
+  }
+}
+
