@@ -1,14 +1,14 @@
 import {Mail,Phone,MapPin} from 'lucide-react';
 
 const contacts= [
-    {icon:Mail , lines:['Dilaneevina93@gmail.com'],href:'Dilaneevina93@gmail.com'},
-    {icon:Phone , lines:['+237 650 67 61 00' , '+237 657 73 29 12'] , href:'+237 650 67 61 00'},
-    {icon:MapPin , lines:['Yaoundé, Cameroun'] , href:'https://google.com'}
+    {icon:Mail , lines:['Dilaneevina93@gmail.com'],href:'mailto:Dilaneevina93@gmail.com'},
+    {icon:Phone , lines:['+237 650 67 61 00' , '+237 657 73 29 12'] , href:'tel:+237 650676100'},
+    {icon:MapPin , lines:['Yaoundé, Cameroun'] , href:'https://maps.google.com/?q=Yaoundé,Cameroun'}
 ] ;
 
 export function Contact (){
     return (
-        <section className="bg-[#1A2A4A] px-6 py-16 loranie">
+        <section className="bg-[#1A2A4A] px-6 py-16">
             <div className="mx-auto max-w-6xl">
                 <h2 className="text-white text-2xl font-heading font-bold mb-3">Prêt à collaborer ?</h2>
                 <p className="text-secondary mb-10">

@@ -5,6 +5,10 @@
 @import "@fontsource/inter/400.css";
 @import "@fontsource/inter/500.css";
 
+
+html{
+  scroll-behavior: smooth;
+}
 @theme {
   --color-primary:#0F172A;
   --color-secondary:#0EA5E9;
@@ -18,7 +22,7 @@
 }
 
 .bar{
-  box-shadow:0px 0px 5px var(--color-secondary);
+  box-shadow:0px 0px 1px gray;
 }
 
 .tel{
@@ -65,7 +69,7 @@
 
 /* aniamation du logo  */
 .logo{
-    text-shadow:0px 0px 10px var(--color-tertiary);
+    text-shadow:0px 0px 5px var(--color-tertiary);
     animation-name: logo ;
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -76,16 +80,16 @@
 
 @keyframes logo {
   0%{
-        text-shadow:0px 0px 5px var(--color-secondary);
+        text-shadow:0px 0px 2px var(--color-secondary);
   }
 
   50%{
-        text-shadow:0px 0px 10px var(--color-tertiary);
+        text-shadow:0px 0px 4px var(--color-tertiary);
   }
 
 
   100%{
-        text-shadow:0px 0px 15px var(--color-tertiary);
+        text-shadow:0px 0px 3px var(--color-tertiary);
   }
   
 }
@@ -102,35 +106,35 @@
 @keyframes bounce {
   0%{
     transform: translateY(0px);
-    box-shadow: 5px 5px 20px slateblue;
+    box-shadow: 5px 5px 20px rgb(58, 210, 244);
   }
 
    10%{
-    transform: translateY(10px);
-        box-shadow: 5px 5px 30px slateblue;
+    transform: translateY(3px);
+        box-shadow: 5px 5px 30px rgb(58, 210, 244);
 
   }
 
    20%{
-    box-shadow: 5px 5px 40px slateblue;
-    transform: translateY(-10px);
+    box-shadow: 5px 5px 40px rgb(9, 2, 69);
+    transform: translateY(5px);
   };
 
  50%{
-    transform: translateY(20px);
-     box-shadow: 5px 5px 50px slateblue;
+    transform: translateY(-5px);
+     box-shadow: 5px 5px 50px rgb(34, 195, 231);
 
   }
 
    80%{
-    transform: translateY(-30px);
-    box-shadow: 5px 5px 60px slateblue;
+    transform: translateY(-6px);
+    box-shadow: 5px 5px 60px rgb(34, 206, 244);
 
   }
 
    100%{
-    transform: translateY(35px);
-    box-shadow: 5px 5px 70px slateblue;
+    transform: translateY(7px);
+    box-shadow: 5px 5px 70px rgb(58, 210, 244);
 
   }
 }

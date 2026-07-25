@@ -28,7 +28,7 @@ const experiences = [
 export function Parcours(){
        
     return (
-        <section className="bg-[#0D1C2F] px-2 py-16">
+        <section className="bg-[#0D1C2F] px-2 py-16" id="Experiences">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-white text-2xl md:text-3xl font-heading font-bold text-center pt-4">PARCOURS PROFESSIONNEL</h2>
                 <div className="w-16 h-1 bg-blue-200 mx-auto mt-3 mb-12"/>

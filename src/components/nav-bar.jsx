@@ -7,19 +7,19 @@ export function NavBar(){
         setisOpen(prev=> !prev);
     }
     return(
-      <div>
-        <section className="bg-primary w-full h-[5%] flex bar max-w-6xl mx-auto">
+      <div className='fixed top-0 w-full right-0 z-10 bg-primary '>
+        <section className="w-full h-[13%] flex bar max-w-6xl  mx-auto">
 
              {/* LOGO */}
 
             <article className="w-[20%] flex items-center">
-                <p className="logo font-bold text-sm lg:text-xl text-blue-100 font-heading ml-2 lg:ml-8 mt-2 mb-2">DILANE EVINA</p>
+                <p className="logod text-sm lg:text-xl text-blue-100 font-heading ml-2 lg:ml-8 mt-2 mb-2 logo">DILANE EVINA</p>
             </article>
 
             <nav className="hidden sm:w-[60%] sm:flex sm:justify-center items-center md:gap-8 lg:gap-15 sm:gap-8 md:w-[80%]">
                 <a href="#Profile" className="font-bold text-gray-500 font-heading hover:underline  hover:text-blue-200 transition-colors duration-200">Profil</a>
                 <a href="#skills" className="font-bold text-gray-500 font-heading hover:underline  hover:text-blue-200 transition-colors duration-200 ">Experiences</a>
-                <a href="#projets" className="font-bold text-gray-500 font-heading hover:underline hover:text-blue-200 transition-colors duration-200">Projets</a>
+                <a href="#projets" className="font- font-bolbold text-gray-500 font-heading hover:underline hover:text-blue-200 transition-colors duration-200">Projets</a>
                 <a href="#formations" className="font-bold text-gray-500 font-heading hover:underline hover:text-blue-200 transition-colors duration-200">Formations</a>
             </nav> 
 
@@ -46,7 +46,7 @@ export function NavBar(){
             {/*Button de contacts  */}
 
          <article className="hidden w-[20%] md:w-[30%] lg:w-[20%] sm:flex  sm:justify-end  sm:items-center pr-1 lg:pr-6 lg:pl-4">
-            <button className="font-bold text-heading text-blue-100  transition-all md:w-[70%] lg:w-full sm:w-[80%] h-[60%]  rounded-xl bg-secondary border-primary">contact</button>
+            <a href='tel:+237657732912' className="text-center hover:scale-105  font-bold text-heading text-blue-100  transition-all md:w-[70%] lg:w-[70%] sm:w-[80%] h-[60%] mr-2 md:mr-0 rounded-xl bg-secondary border-primary">contact</a>
          </article>
 
         </section>

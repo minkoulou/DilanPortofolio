@@ -13,7 +13,7 @@ const qualites = ['CRÉATIVITÉ STRATÉGIQUE', 'RIGUEUR ORGANISATIONNELLE', "ESP
 
 export function Competences(){
       return(
-        <section className="bg-[#0D1C2F] px-4 py-12">
+        <section className="bg-[#0D1C2F] px-4 py-12" id='skills'>
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
                 <div>

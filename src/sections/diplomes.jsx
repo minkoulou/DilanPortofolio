@@ -20,7 +20,7 @@ const diplomes = [
 
 export default function Diplome(){
    return (
-   <section className="bg-primary px-6 py-16">
+   <section className="bg-primary px-6 py-16" id='formations'>
         <div className="max-w-6xl mx-auto">
             <h2 className="text-white text-2xl font-bold text-center font-heading mb-10">FORMATIONS & DIPLÔMES</h2>
 

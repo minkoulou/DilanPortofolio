@@ -2,6 +2,8 @@ import image1 from '../assets/FACAS.jpeg'
 import image2 from '../assets/advasory.jpeg'
 import image3 from '../assets/Mebusco.jpeg'
 
+import { ArrowRight } from 'lucide-react'
+
 const projets= [
 
     {
@@ -33,7 +35,7 @@ const projets= [
 ]
 export function Projets(){
  return(
-    <section className="bg-primary px-6 py-16">
+    <section className="bg-primary px-6 py-16" id='projets'>
         <div className="max-w-6xl mx-auto">
             <div className="mb-10">
                 <h2 className="text-white text-2xl font-bold font-heading text-center">RÉALISATIONS & PROJETS</h2>
@@ -51,7 +53,10 @@ export function Projets(){
 
                         <h3 className="text-white font-bold mb-2 font-heading">{titre}</h3>
                         <p className="text-slate-400 text-sm flex-1 font-body">{description}</p>
-                        <a href={link} className="mt-5 w-[40%] sm:w-[50%] md:w-[35%] pl-2 md:pl-1 hover:scale-105 transition-transform duration-300 rounded-sm bg-tertiary text-primary font-body btn">{cta}</a>
+                        <a href={link} className="mt-5 w-full  pl-2 md:pl-1 hover:scale-105 transition-transform font-semibold duration-300 hover:text-tertiary text-white  font-body flex gap-2">
+                            {cta}
+                           <ArrowRight size={20} className='group-hover:translate-x-1 transition-transform mt-1'/>
+                        </a>
 
                     </div>
                 ))}
