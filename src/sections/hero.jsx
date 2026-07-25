@@ -1,4 +1,5 @@
 import dilane from '../assets/dilane.jpeg'
+import { Download } from 'lucide-react';
 
 export function Hero() {
   const badges = ['COMMUNITY MANAGEMENT', 'DESIGN GRAPHIQUE', 'CONSEILS STRATÉGIQUES'];
@@ -32,6 +33,10 @@ export function Hero() {
                 {badge}
               </span>
             ))}
+
+          </div>
+          <div className='flex justify-center items mt-8  hover:scale-103 transition-all'>
+             <a href="../public/cv.jpeg" download='CV-Dilane-Evina-2026.jpeg' className='text-xl font-semibold text-blue-300 bg-blue-300/5 border border-blue-400/30 rounded-xl px-3 py-1 flex gap-4'> <Download className='animate-pulse' size={25}/>Télécharger le CV</a>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const points= [
 
 export function Profile(){
     return (
-        <section className="bg-slate-900 w-full py-16 px-6" id="Profile">
+        <section className="bg-slate-900 w-full py-5 px-6" id="Profile">
             <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 bg-slate-700 mt-4">
               <h2 className="text-white text-2xl font-bold font-heading border-l-4 border-blue-400 pl-4 md:col-span-1 text-wrap md:mt-6">PROFIL PROFESSIONNEL</h2>
               <div className="bg-slate-800/60 p-6 md:col-span-2 text-tertiary">

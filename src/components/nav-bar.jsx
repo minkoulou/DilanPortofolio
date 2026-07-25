@@ -31,7 +31,7 @@ export function NavBar(){
                 <a href="#skills" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Experiences</a>
                 <a href="#projets" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Projets</a>
                 <a href="#formations" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Formations</a>
-                <a href="#contact" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Contact</a> 
+                <a href="tel:+237657732912" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Contact</a> 
 
             </nav>)}
 

@@ -95,7 +95,7 @@ html{
 }
 
 .novich{
- animation-name:bounce;
+ animation-name:saut;
  animation-duration: 10s;
  animation-delay: 0s;
  animation-iteration-count: infinite;
@@ -103,7 +103,7 @@ html{
  
 }
 
-@keyframes bounce {
+@keyframes saut {
   0%{
     transform: translateY(0px);
     box-shadow: 5px 5px 20px rgb(58, 210, 244);
