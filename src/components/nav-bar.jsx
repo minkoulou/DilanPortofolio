@@ -25,15 +25,15 @@ export function NavBar(){
 
                 {/* navigation pour les appreils mobiles  */}
 
-            <nav className="flex flex-col z-10 absolute right-1 rounded-bl-xl rounded-br-xl top-14 tel w-40 p-4 sm:hidden gap-4">
+            {isOpen &&  (<nav className="flex flex-col z-10 absolute right-1 rounded-bl-xl rounded-br-xl top-14 tel w-40 p-4 sm:hidden gap-4">
           
-               {isOpen &&  ( <a href="#Profile" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Profil</a>)}
-                 {isOpen &&  ( <a href="#skills" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Experiences</a>)}
-                 {isOpen &&  ( <a href="#projets" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Projets</a>)}
-                 {isOpen &&  ( <a href="#formations" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Formations</a>)}
-                 {isOpen &&  ( <a href="tel:+237657732912" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Contact</a> )}
+                <a href="#Profile" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 " onClick={()=>{setisOpen(false)}}>Profil</a>
+                <a href="#skills" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 " onClick={()=>{setisOpen(false)}}>Experiences</a>
+                <a href="#projets" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 " onClick={()=>{setisOpen(false)}}>Projets</a>
+                <a href="#formations" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 " onClick={()=>{setisOpen(false)}}>Formations</a>
+                <a href="tel:+237657732912" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 " onClick={()=>{setisOpen(false)}}>Contact</a> 
 
-            </nav>
+            </nav>)}
 
             <article className="sm:hidden  flex flex-col items-end gap-2 mt-3 pr-2 mb-2 w-[80%]" onClick={handlerToggle}>
 
