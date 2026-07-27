@@ -3,7 +3,7 @@ import {Mail,Phone,MapPin} from 'lucide-react';
 const contacts= [
     {icon:Mail , lines:['Dilaneevina93@gmail.com'],href:'mailto:Dilaneevina93@gmail.com'},
     {icon:Phone , lines:['+237 650 67 61 00' , '+237 657 73 29 12'] , href:'tel:+237 650676100'},
-    {icon:MapPin , lines:['Yaoundé, Cameroun'] , href:'https://maps.google.com/?q=Yaoundé,Cameroun'}
+    {icon:MapPin , lines:['Yaoundé, Cameroun'] , href:'https://maps.app.goo.gl/6kMRg6mzZbtp1h5Z6'}
 ] ;
 
 export function Contact (){
