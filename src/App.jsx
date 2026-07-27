@@ -28,7 +28,7 @@ function App() {
      <Diplome/>
      <Contact/>
      <Footer/>
-     <WhatsappButton numero="237657732912"/>
+     <WhatsappButton numero="237650676100"/>
    </div>  
    </>
   )
