@@ -11,6 +11,7 @@ import { Competences } from './sections/competences.jsx'
 import Diplome from './sections/diplomes'
 import { Contact } from './sections/contact.jsx'
 import { Footer } from './components/footer.jsx'
+import { WhatsappButton } from './components/whatsappButton.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
      <Diplome/>
      <Contact/>
      <Footer/>
+     <WhatsappButton numero="237657732912"/>
    </div>  
    </>
   )
