@@ -25,15 +25,15 @@ export function NavBar(){
 
                 {/* navigation pour les appreils mobiles  */}
 
-            {isOpen &&  (<nav className="flex flex-col z-10 absolute right-1 rounded-bl-xl rounded-br-xl top-14 tel w-40 p-4 sm:hidden gap-4">
+            <nav className="flex flex-col z-10 absolute right-1 rounded-bl-xl rounded-br-xl top-14 tel w-40 p-4 sm:hidden gap-4">
           
-                <a href="#Profile" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Profil</a>
-                <a href="#skills" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Experiences</a>
-                <a href="#projets" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Projets</a>
-                <a href="#formations" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Formations</a>
-                <a href="tel:+237657732912" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Contact</a> 
+               {isOpen &&  ( <a href="#Profile" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Profil</a>)}
+                 {isOpen &&  ( <a href="#skills" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Experiences</a>)}
+                 {isOpen &&  ( <a href="#projets" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Projets</a>)}
+                 {isOpen &&  ( <a href="#formations" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Formations</a>)}
+                 {isOpen &&  ( <a href="tel:+237657732912" className="font-bold text-blue-300 font-heading hover:scale-95 transition-all duration-400 ">Contact</a> )}
 
-            </nav>)}
+            </nav>
 
             <article className="sm:hidden  flex flex-col items-end gap-2 mt-3 pr-2 mb-2 w-[80%]" onClick={handlerToggle}>
 
@@ -47,6 +47,9 @@ export function NavBar(){
 
          <article className="hidden w-[20%] md:w-[30%] lg:w-[20%] sm:flex  sm:justify-end  sm:items-center pr-1 lg:pr-6 lg:pl-4">
             <a href='tel:+237657732912' className="text-center hover:scale-105  font-bold text-heading text-blue-100  transition-all md:w-[70%] lg:w-[70%] sm:w-[80%] h-[60%] mr-2 md:mr-0 rounded-xl bg-secondary border-primary">contact</a>
+            {/* <div className="h-[40%] w-[30%] border rounded-full border-white bg-secondary ">
+                <span className='bg-white  border border-white rounded-full'></span>
+            </div> */}
          </article>
 
         </section>
